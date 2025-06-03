@@ -1,0 +1,19 @@
+// vite.config.ts
+import { reactRouter } from "file:///C:/Users/ywj95/Desktop/makers/node_modules/@react-router/dev/dist/vite.js";
+import { defineConfig } from "file:///C:/Users/ywj95/Desktop/makers/node_modules/vite/dist/node/index.js";
+import tsconfigPaths from "file:///C:/Users/ywj95/Desktop/makers/node_modules/vite-tsconfig-paths/dist/index.js";
+import react from "file:///C:/Users/ywj95/Desktop/makers/node_modules/@vitejs/plugin-react/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [reactRouter(), tsconfigPaths(), react()],
+  build: {
+    cssMinify: true,
+    ssr: false
+  },
+  server: {
+    port: 3e3
+  }
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFx5d2o5NVxcXFxEZXNrdG9wXFxcXG1ha2Vyc1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiQzpcXFxcVXNlcnNcXFxceXdqOTVcXFxcRGVza3RvcFxcXFxtYWtlcnNcXFxcdml0ZS5jb25maWcudHNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL0M6L1VzZXJzL3l3ajk1L0Rlc2t0b3AvbWFrZXJzL3ZpdGUuY29uZmlnLnRzXCI7aW1wb3J0IHsgcmVhY3RSb3V0ZXIgfSBmcm9tIFwiQHJlYWN0LXJvdXRlci9kZXYvdml0ZVwiO1xuXG5pbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tIFwidml0ZVwiO1xuaW1wb3J0IHRzY29uZmlnUGF0aHMgZnJvbSBcInZpdGUtdHNjb25maWctcGF0aHNcIjtcbmltcG9ydCByZWFjdCBmcm9tIFwiQHZpdGVqcy9wbHVnaW4tcmVhY3RcIjtcblxuZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHtcbiAgcGx1Z2luczogW3JlYWN0Um91dGVyKCksIHRzY29uZmlnUGF0aHMoKSwgcmVhY3QoKV0sXG4gIGJ1aWxkOiB7XG4gICAgY3NzTWluaWZ5OiB0cnVlLFxuICAgIHNzcjogZmFsc2UsXG4gIH0sXG4gIHNlcnZlcjoge1xuICAgIHBvcnQ6IDMwMDAsXG4gIH0sXG59KTtcbiJdLAogICJtYXBwaW5ncyI6ICI7QUFBbVIsU0FBUyxtQkFBbUI7QUFFL1MsU0FBUyxvQkFBb0I7QUFDN0IsT0FBTyxtQkFBbUI7QUFDMUIsT0FBTyxXQUFXO0FBRWxCLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQzFCLFNBQVMsQ0FBQyxZQUFZLEdBQUcsY0FBYyxHQUFHLE1BQU0sQ0FBQztBQUFBLEVBQ2pELE9BQU87QUFBQSxJQUNMLFdBQVc7QUFBQSxJQUNYLEtBQUs7QUFBQSxFQUNQO0FBQUEsRUFDQSxRQUFRO0FBQUEsSUFDTixNQUFNO0FBQUEsRUFDUjtBQUNGLENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==
