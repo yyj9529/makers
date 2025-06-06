@@ -7,6 +7,8 @@ import { ProductCard } from "~/features/products/components/product-card";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import { PostCard } from "~/features/community/components/post-card";
 import { IdeaCard } from "~/features/ideas/components/idea-card";
+import { Badge } from "../components/ui/badge";
+import { JobCard } from "~/features/jobs/components/job-card";
 
 export const meta : MetaFunction =()=> {
   return[
@@ -91,6 +93,32 @@ export default function HomePage() {
           />
         ))}
       </div>
+
+      <div className="grid grid-cols-4 gap-4">
+        <div>
+          <h2 className="text-5xl font-bold leading-tight tracking-tight">
+            Latest Jobs
+          </h2>
+          <p className="text-xl font-light text-foreground">
+            Find your dream job.
+          </p>
+          <Button variant="link" asChild className="text-lg p-0">
+            <Link to="/jobs">Explore all jobs &rarr;</Link>
+          </Button>
+        </div>
+        <JobCard
+          id="jobId"
+          company="Tesla Motors"
+          companyLogoUrl="https://github.com/teslamotors.png"
+          companyHq="San Francisco, CA"
+          title="Software Engineer"
+          posteAt="12 hours ago"
+          type="Full-Time"
+          positionLocation="Remote"
+          salary="$100,000 - $120,000"
+        />
+      </div>
+
   
     </div>
   );
