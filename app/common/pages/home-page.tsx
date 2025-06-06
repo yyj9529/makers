@@ -10,15 +10,23 @@ import { IdeaCard } from "~/features/ideas/components/idea-card";
 import { Badge } from "../components/ui/badge";
 import { JobCard } from "~/features/jobs/components/job-card";
 import { TeamCard } from "~/features/teams/components/team-card";
+import type { Route } from "../../../../.react-router/types/app/common/pages/+types/home-page";
 
-export const meta : MetaFunction =()=> {
-  return[
-    {title : "Home | makers"},
-    {name : "description", content : "Welcome to makers"}
+export function loader({ request }: Route.LoaderArgs) {
+  return {};
+}
+
+export function action({ request }: Route.ActionArgs) {
+  return {};
+}
+
+export function meta(): Route.MetaFunction {
+  return [
+    { title: "Common Home Page" },
   ];
 }
 
-export default function HomePage() {
+export default function CommonHomePage(props: Route.ComponentProps) {
   return (
     <div className="px-20 space-y-40">
       <div className="grid grid-cols-3 gap-4 px-20">
