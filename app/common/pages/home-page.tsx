@@ -13,7 +13,11 @@ import { TeamCard } from "~/features/teams/components/team-card";
 import type { Route } from "../../../../.react-router/types/app/common/pages/+types/home-page";
 
 export function loader({ request }: Route.LoaderArgs) {
-  return {};
+  console.log("hello");
+  return {
+    hello : "world",
+    hello2 : "world2"
+  };
 }
 
 export function action({ request }: Route.ActionArgs) {
