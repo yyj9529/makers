@@ -1,3 +1,4 @@
+import { redirect } from "react-router";
 import type { Route } from "../../../../.react-router/types/app/features/products/pages/+types/products-page";
 
 export const meta: Route.MetaFunction = () => [
@@ -5,7 +6,7 @@ export const meta: Route.MetaFunction = () => [
 ];
 
 export function loader({ request }: Route.LoaderArgs) {
-  return {};
+  return redirect("/products/leaderboards");
 }
 
 export function action({ request }: Route.ActionArgs) {

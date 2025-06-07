@@ -10,21 +10,13 @@ import { IdeaCard } from "~/features/ideas/components/idea-card";
 import { Badge } from "../components/ui/badge";
 import { JobCard } from "~/features/jobs/components/job-card";
 import { TeamCard } from "~/features/teams/components/team-card";
-import type { Route } from "../../../../.react-router/types/app/common/pages/+types/home-page";
+import type { Route } from "../../features/products/pages/+types/leaderboard-page";
 
-export function loader({ request }: Route.LoaderArgs) {
-  console.log("hello");
-  return {
-    hello : "world",
-    hello2 : "world2"
-  };
-}
 
 export function action({ request }: Route.ActionArgs) {
   return {};
 }
-
-export function meta(): Route.MetaFunction {
+export function meta({  }: Route.MetaFunction) {
   return [
     { title: "Common Home Page" },
   ];
