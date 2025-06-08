@@ -43,6 +43,11 @@ type Pages = {
       "day": string;
     };
   };
+  "/products/leaderboards/:period": {
+    params: {
+      "period": string;
+    };
+  };
   "/products/categories": {
     params: {};
   };
@@ -65,7 +70,7 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/products" | "/products/leaderboards" | "/products/leaderboards/yearly/:year" | "/products/leaderboards/monthly/:year/:month" | "/products/leaderboards/weekly/:year/:week" | "/products/leaderboards/daily/:year/:month/:day" | "/products/categories" | "/products/categories/:category" | "/products/search" | "/products/submit" | "/products/promote";
+    page: "/" | "/products" | "/products/leaderboards" | "/products/leaderboards/yearly/:year" | "/products/leaderboards/monthly/:year/:month" | "/products/leaderboards/weekly/:year/:week" | "/products/leaderboards/daily/:year/:month/:day" | "/products/leaderboards/:period" | "/products/categories" | "/products/categories/:category" | "/products/search" | "/products/submit" | "/products/promote";
   };
   "common/pages/home-page.tsx": {
     id: "common/pages/home-page";
@@ -94,6 +99,10 @@ type RouteFiles = {
   "features/products/pages/daily-leaderboard-page.tsx": {
     id: "features/products/pages/daily-leaderboard-page";
     page: "/products/leaderboards/daily/:year/:month/:day";
+  };
+  "features/products/pages/leaderboard-redirection-page.tsx": {
+    id: "features/products/pages/leaderboard-redirection-page";
+    page: "/products/leaderboards/:period";
   };
   "features/products/pages/categories-page.tsx": {
     id: "features/products/pages/categories-page";
